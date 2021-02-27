@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  transition: 0.6s;
+}
+
+.topnav a {
+  float:left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  transition: 0.6s;
+  display: inline;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+  transition: 0.6s;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.topnav ul {
+  float:left;
+  list-style-type: none;
+
+}
+.topnav ul li{
+  display: inline-block;
+}
+
+</style>
+</head>
+<body>
+
+<div class="topnav">
+  <ul>
+    <li><a href="index">Home</a></li>
+    <li><a href="Sports">Sports</a></li>
+    <li><a href="Business">Business</a></li>
+    <li><a class = "active" href="Health">Health</a></li>
+    <li><a href="Technology">Technology</a></li>
+    <li><a href="Science">Science</a></li> 
+    <li><a href="corona">Corona Stats</a></li>  
+  </ul>
+  
+  
+</div>
+
+
+
+
+<head style = "background-color:beige;">
+  <meta charset="UTF-8">
+  <title>India News</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<style>
+  /* body {
+    background-image:  url('hackathon_app/back.gif');
+    background-size:100%;
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+    height:100%;
+    width:100%;
+} */
+</style>
+<body>
+
+<div class="jumbotron" style="background-color:rgb(53, 94, 63);">
+
+  <h1 style="color:rgb(250, 255, 174)">
+
+      <center>Health is Wealth</center>
+
+  </h1>
+
+</div>
+<div style="padding-left:16px">
+  <h2 style="color: rgb(141, 48, 17);"><center>Headlines</center></h2>
+  <p></p>
+</div>
+
+<div class="container">
+
+  {% for new, des, i,j in context %}
+
+  <img src="{{i}}" alt="" width=450 height=250 style="float: right;" > 
+  <h3 style="text-align: left; color: rgb(59, 24, 24);" >News: </h3>{{new}}
+  <h4 style="text-align: left; color: rgb(61, 61, 0);">Description: </h4> {{des}}
+  <a href ="{{j}}">.....Click here for more</a>
+  <h5>________________________________________________________________________________________________________________________________________</h5>
+  <h5>________________________________________________________________________________________________________________________________________</h5>
+  {% endfor %}
+
+
+</div>
+
+</body>
+</html>
