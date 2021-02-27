@@ -51,12 +51,13 @@ body {
     <div class="topnav">
       <ul>
         <li><a href="index">Home</a></li>
-        <li><a href="General">General</a></li>
+        
         <li><a href="Sports">Sports</a></li>
         <li><a href="Business">Business</a></li>
         <li><a class = "active" href="Health">Health</a></li>
         <li><a href="Technology">Technology</a></li>
-        <li><a href="Science">Science</a></li>   
+        <li><a href="Science">Science</a></li>  
+        <li><a href="corona">Corona Stats</a></li> 
       </ul>
     </div>
   </header>
@@ -72,9 +73,16 @@ body {
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <style>
-  body {
-      background-color:aqua;
-  }
+  body{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('http://i.stack.imgur.com/kx8MT.gif');
+    background-size: cover;
+    
+    
+    
+    height: 100vh;
+    padding:0;
+    margin:0;
+}
 </style>
 <body>
 
@@ -91,12 +99,14 @@ body {
 
 <div class="container">
 
-  {% for new, des, i in context %}
+  {% for new, des, i,j in context %}
 
-  <center><img src="{{i}}" alt="" width=600 height=400 ></center> 
-  <h3>News: </h3> {{new}}
-  <h4>Description: </h4> {{des}}
-  <h5></h5>
+  <img src="{{i}}" alt="" width=500 height=300 style="float: right;" > 
+  <h3 style="text-align: left; color: antiquewhite;" >News: </h3> {{new}}
+  <h4 style="text-align: left; color: beige;">Description: </h4> {{des}}
+  <a href ="{{j}}">.....Click here for more</a>
+  <h5>________________________________________________________________________________________________________________________________________</h5>
+  <h5>________________________________________________________________________________________________________________________________________</h5>
   {% endfor %}
 
 
