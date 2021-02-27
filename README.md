@@ -1,6 +1,5 @@
 # Hackathon-February-2020
-
-# Our Code is written in HTML, CSS and Python.
+ Our Code is mainly written in HTML, CSS and Python.
 
 1.  To run our webapp, we will first have to install news api by going into windows Powershel.
   Type - pip install newsapi-python - into it. Let it install. 
