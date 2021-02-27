@@ -31,4 +31,6 @@ Yes our website also gives you feed of Corona updates as provided by the API .
 We recommend you to get your API code from the website "https://newsapi.org/"
 To be honest we were not able to use .env to secure our API. 
 
+We would also like to mention that there is a small bug that is to be fixed. The bug is that when we go on Corona Stats tab, the other navigation bar links becomes non clickable, and hence we have to go back after going on Corona Tab. This bug is not present with any other navigation tab.  
+
 
