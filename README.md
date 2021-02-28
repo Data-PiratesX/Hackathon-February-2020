@@ -4,7 +4,7 @@
 1.  To run our webapp, we will first have to install news api by going into windows Powershel.
   Type - pip install newsapi-python - into it. Let it install. 
 2. We will also have to install Flask for python. For that, type 
-  - pipenv install flask flask-sqlalchemy - into windows powershell. 
+  - pip install flask - into windows powershell. 
 
 We have completed our installations. For our purpose, we used Visual Studio Code. We are not familiar with other IDE or Code Editors.
 
