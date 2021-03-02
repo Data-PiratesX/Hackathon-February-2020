@@ -3,7 +3,7 @@ from newsapi import NewsApiClient
 app = Flask(__name__)
 @app.route('/')
 def Index():
-    newsapi = NewsApiClient(api_key="3c1dc6073") # this is just a sample api key to get your own api key vist newsapi.org
+    newsapi = NewsApiClient(api_key="3c1dc6") # this is just a sample api key to get your own api key vist newsapi.org
     topheadlines = newsapi.get_top_headlines(sources="the-times-of-india")
  
  
@@ -26,7 +26,7 @@ def Index():
 
 @app.route('/Sports')
 def sports():
-    newsapi = NewsApiClient(api_key="3c1dc6073964421984cc0533496eafa0")
+    newsapi = NewsApiClient(api_key="")
     top_headlines = newsapi.get_top_headlines(country= 'in', category='sports')
     
     articles = top_headlines['articles']
@@ -47,7 +47,7 @@ def sports():
 
 @app.route('/Health')
 def health():
-    newsapi = NewsApiClient(api_key="3c1dc6073964421984cc0533496eafa0")
+    newsapi = NewsApiClient(api_key="")
     top_headlines = newsapi.get_top_headlines(category='health')
     
     articles = top_headlines['articles']
@@ -68,7 +68,7 @@ def health():
 
 @app.route('/Business')
 def business():
-    newsapi = NewsApiClient(api_key="3c1dc6073964421984cc0533496eafa0")
+    newsapi = NewsApiClient(api_key="")
     top_headlines = newsapi.get_top_headlines(category='business')
     
     articles = top_headlines['articles']
@@ -89,7 +89,7 @@ def business():
 
 @app.route('/Science')
 def science():
-    newsapi = NewsApiClient(api_key="3c1dc6073964421984cc0533496eafa0")
+    newsapi = NewsApiClient(api_key="")
     top_headlines = newsapi.get_top_headlines(category='science')
     
     articles = top_headlines['articles']
@@ -110,7 +110,7 @@ def science():
 
 @app.route('/Technology')
 def technology():
-    newsapi = NewsApiClient(api_key="3c1dc6073964421984cc0533496eafa0")
+    newsapi = NewsApiClient(api_key="")
     top_headlines = newsapi.get_top_headlines(category='technology')
     
     articles = top_headlines['articles']
@@ -132,7 +132,7 @@ def technology():
 
 @app.route('/index')
 def index():
-    newsapi = NewsApiClient(api_key="3c1dc6073964421984cc0533496eafa0")
+    newsapi = NewsApiClient(api_key="")
     topheadlines = newsapi.get_top_headlines(sources="the-times-of-india")
  
  
