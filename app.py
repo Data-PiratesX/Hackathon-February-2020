@@ -3,7 +3,7 @@ from newsapi import NewsApiClient
 app = Flask(__name__)
 @app.route('/')
 def Index():
-    newsapi = NewsApiClient(api_key="3c1dc6073964421984cc0533496eafa0")
+    newsapi = NewsApiClient(api_key="3c1dc6073") # this is just a sample api key to get your own api key vist newsapi.org
     topheadlines = newsapi.get_top_headlines(sources="the-times-of-india")
  
  
